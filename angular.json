@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "untitled-app": {
+    "untitled-app-1": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/untitled-app",
+            "outputPath": "dist/untitled-app-1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -74,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "untitled-app:build:production"
+              "browserTarget": "untitled-app-1:build:production"
             },
             "development": {
-              "browserTarget": "untitled-app:build:development"
+              "browserTarget": "untitled-app-1:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "untitled-app:build"
+            "browserTarget": "untitled-app-1:build"
           }
         },
         "test": {
@@ -120,7 +120,7 @@
       }
     }
   },
-  "defaultProject": "untitled-app",
+  "defaultProject": "untitled-app-1",
   "cli": {
     "defaultCollection": "@angular-eslint/schematics"
   }
